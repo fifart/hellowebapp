@@ -4,6 +4,6 @@
 {% endblock %}
 {% block content %}
     <h1>Hello World!</h1>
-    <p>{% if number == 6 %} True {% endif %}</p>
+    <p>I am a basic Django Website</p>
 {% endblock %}
 
