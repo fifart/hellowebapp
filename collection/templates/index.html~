@@ -4,6 +4,6 @@
 {% endblock %}
 {% block content %}
     <h1>Hello World!</h1>
-    <p>{% if number == 6 %} True {% endif %}</p>
+    <p>This is my name:{{ thing|trancatewords:1 }}</p>
 {% endblock %}
 
