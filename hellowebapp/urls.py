@@ -26,6 +26,14 @@ url(r'^things/(?P<slug>[-\w]+)/$',
 url(r'^things/(?P<slug>[-\w]+)/edit/$',
     'collection.views.edit_thing',
     name='edit_thing'),    
+    
+#registration
+
+url(r'^accounts/',
+
+include('registration.backends.simple.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
 )
+
+
