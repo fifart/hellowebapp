@@ -1,0 +1,12 @@
+{% extends 'layouts/base.html' %}
+{% block title %} Create a Thing - {{ block.super }} 
+{% endblock %}
+{% block content %}
+   <h2>Create a Thing</h2>
+   <form role="form" action="" method="post">
+   {% csrf_token %}
+   {{ form.as_p }}
+   <input type="submit" value="Submit" />
+   </form>
+      
+{% endblock %}
