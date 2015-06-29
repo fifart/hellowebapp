@@ -48,7 +48,7 @@ def create_thing(request):
             thing.slug = slugify(thing.name)
             
             thing.save()
-            slug = slugify(name)
+            slug = slugify(thing.name)
             
         return redirect('thing_detail', slug=thing.slug)
     else:
